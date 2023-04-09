@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+	color: #ffffff;
+}
+/* 15ad5d */
+body {
+  margin: 0;
+  color: #ffffff !important;
+  background-color: black !important;
+  font-family: 'Montserrat' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+	width: 8px;
+  height: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: #000000;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #4c4c4c;
+	border-radius: 8px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ .slider-each-slide > div {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-inline: 30px;
+  background-size: cover;
+  height: 350px;
+}
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-inline: 1rem  ;
+  background-size: cover;
+  min-width: 30%;
+}
+
+.slider-news > div
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-inline: 1rem  ;
+    background-size: cover;
+    width: 30%;
+}
+/*
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+} */
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:before{
+
+    width: 25px !important;
+    border-radius: 10px !important;
+    background: #ffffff !important;
+    opacity: 0.3 !important;
+}
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:hover, .react-slideshow-container+ul.indicators .each-slideshow-indicator.active, .react-slideshow-container+ul.indicators .each-slideshow-indicator:focus{
+  opacity: 1 !important;
+}
+
+.react-slideshow-container+ul.indicators li{
+    padding-inline: 20px !important;
+    /* background:#808080; */
+}
+
+@media (max-width: 991px)
+{
+    .slider-news > div
+    {
+        width: 100%;
+    }
+}

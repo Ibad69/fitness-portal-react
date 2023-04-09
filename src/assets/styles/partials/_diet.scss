@@ -1,0 +1,127 @@
+.diet
+{
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+
+    h1
+    {
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    &_left
+    {
+        width: 580px;
+        box-shadow: 0 0 15px #c6c6c6;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 0 20px;
+        min-height: 230px;
+    }
+
+    &_right
+    {
+        width: 580px;
+        box-shadow: 0 0 15px #c6c6c6;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 0 20px;
+        min-height: 230px;
+    }
+
+    &_item
+    {
+        border: 2px solid green;
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin: 5px 10px 5px 0;
+        display: inline-block;
+        position: relative;
+
+        span
+        {
+            margin: 0 5px;
+        }
+    }
+
+    &_remove
+    {
+        cursor: pointer;
+        color: red;
+        font-weight: 600;
+    }
+
+    &_remove:hover
+    {
+        color: rgb(182, 78, 78);
+    }
+    
+    &_result
+    {
+        margin-top: 20px;
+    }
+
+    &_itemBot
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_plus
+    {
+        border: 2px solid rgb(82, 151, 82);
+        padding: 0 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: rgb(82, 151, 82);
+    }
+
+    &_minus
+    {
+        border: 1px solid red;
+        padding: 0 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: red;
+    }
+
+    &_disable
+    {
+        pointer-events: none;
+    }
+
+    select
+    {
+        width: 100%;
+        border: 1px solid gray;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .diet
+    {
+        flex-wrap: wrap;
+
+        &_right
+        {
+            width: 100%;
+        }
+
+        &_left
+        {
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+}

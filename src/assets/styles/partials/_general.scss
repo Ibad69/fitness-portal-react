@@ -1,0 +1,19 @@
+// @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400&family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+a
+{
+    text-decoration: none;
+    // color: white;
+}
+
+.disclaimer
+{
+    padding: 20px;
+
+    &_title
+    {
+        font-weight: 800;
+        font-size: 22px;
+    }
+}
