@@ -6,7 +6,7 @@ const token = localStorage.getItem('token')
 const authToken = `Bearer ${token}`;
 
 const instance = axios.create({
-    baseURL: "http://18.212.235.9",
+    baseURL: "http://3.88.14.174",
     headers: {
         "Content-Type": "application/json",
         "Authorization": authToken,
